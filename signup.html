@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: teal;
+            font-family: "Montserrat", sans-serif;
+        }
+        /*
+        .option {
+            width: 70px;
+        }
+        */
+        
+        form {
+            background-image: url("C:\Users\BAMIGBOYE ISRAEL\Downloads\chemic pouring.jfif");
+        }
+        
+        section {
+            width: 400px;
+            float: left;
+            padding: 10px;
+        }
+        
+         ::placeholder {
+            text-align: justify;
+        }
+        /*
+        .insert::before {
+            background-image: url();
+            width: 30px;
+            height: 30px;
+        }
+        */
+        
+        select {
+            width: 250px;
+        }
+        
+        input .width {
+            width: 250px;
+        }
+        
+        .heading {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+        }
+        
+        .nav-links li {
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 14px 16px;
+        }
+        
+        .nav-links a:hover:not(.active) {
+            background-color: lightseagreen;
+        }
+        
+        .nav-links li a.active {
+            background-color: #4caf50;
+        }
+        
+        .dif {
+            display: block;
+            width: 60%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        button {
+            background-color: white;
+            border: 2px solid #04AA6D;
+            color: black;
+            padding: 12px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            transition-duration: 0.4s;
+            box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.58) 0 50px 100px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        button:hover {
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="heading">
+
+            <h4>Chemolab</h4>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html" class="active">Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+
+    </nav>
+    <form>
+        <section>
+            <div class="name">
+                <div class="insert">
+                    <p>First name</p>
+                    <input style="width: 250px;" type="text" placeholder="enter your name" />
+                    <p>Last name</p>
+                    <input style="width: 250px;" type="text" id="inpuname" placeholder="input surname" />
+                    <p>Middle name</p>
+                    <input style="width: 250px;" type="text" placeholder="input middle name" id="placeholder" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="other">
+                <p>Username</p>
+                <input style="width: 250px;" type="text" placeholder="username" />
+                <p>Email address</p>
+                <input style="width: 250px;" type="text" placeholder="email" />
+                <p>Date of birth</p>
+                <input style="width: 250px;" type="date" />
+            </div>
+        </section>
+        <section>
+            <label>
+                      <p> Where are you form</p>
+                       <select>
+                           <div class="option">
+                           <option>--None--</option>
+                           <option>America</option>
+                           <option>Australia</option>
+                           <option>Benin Republic</option>
+                           <option>Brazil</option>
+                           <option>Cote devoire</option>
+                           <option>Cairo</option>
+                           <option>Cameroon</option>
+                           <option>Nigeria</option>
+                           <option>Niger</option>
+                           <option>Egypt</option>
+                           <option>Israel</option>
+                           <option>Pakistan</option>
+                           <option>Afghanistan</option>
+                           <option>United Kingdom</option>
+                           <option>U.S.A</option>
+                           <option>Gaza</option>
+                           <option>Other</option>
+                           </div>
+                       </select>
+                    </label>
+            <p>Which sex do you belong</p>
+            <label><input type="radio" name="gender" value="male"/>Male</label>
+            <label><input type="radio" name="gender" value="female"/>Female</label>
+        </section>
+
+        </div>
+        <div class="dif">
+            <p>
+                <label><input type="checkbox"/>Already have  an account?&nbsp; &nbsp;  &nbsp;<a href="login.html">Login</a>
+            </p>
+            <button type="submit">Signup</button>
+        </div>
+    </form>
+</body>
+
+</html>

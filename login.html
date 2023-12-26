@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Login to chemolab
+    </title>
+    <style>
+        form {
+            text-align: center;
+            padding: 30px
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: teal;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .heading {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+        }
+        
+        .nav-links li {
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 14px 16px;
+        }
+        
+        .nav-links a:hover:not(.active) {
+            background-color: lightseagreen;
+        }
+        
+        .nav-links li a.active {
+            background-color: #4caf50;
+        }
+        
+        .form {
+            background-color: white;
+            border: 2px solid #04AA6D;
+            color: black;
+            padding: 12px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+            transition-duration: 0.4s;
+            box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.58) 0 50px 100px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .button {
+            background-color: white;
+            border: 2px solid #04AA6D;
+            color: black;
+            padding: 4px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            transition-duration: 0.4s;
+            box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.58) 0 50px 100px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .button:hover {
+            background-color: #04AA6D;
+            color: green;
+        }
+        
+        .left {
+            text-align: left;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        input {
+            border: 2px solid #04AA6D;
+            border-radius: 4px;
+        }
+        
+        input:hover {
+            border-radius: 6px;
+        }
+        
+         ::placeholder {
+            color: #04AA6D;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="heading">
+
+            <h4>Chemolab</h4>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+
+        </ul>
+
+    </nav>
+    <form>
+        <div class="form">
+            <div class="input">
+                <p>
+                    <label>Username:<input type="text" placeholder="input your email"/></label>
+                </p>
+                <p>
+                    <label>Password:<input type="text" placeholder="input your password"/></label>
+                </p>
+            </div>
+
+            <div class="forg">
+                <div class="left">
+                    <label><input type="checkbox"/>Remember me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot Password?</a></label>
+                </div>
+            </div>
+            <br/>
+            <button type="submit" class="button">Login</button>
+            <div class="beneath">
+                <p>Don't have an account? &nbsp; <a href="signup.html">Signup</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
